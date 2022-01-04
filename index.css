@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #191919;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* ------- Start of section general styles of header */
+.cabecalho{     
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 35px;
+    padding-bottom: 100px;
+}
+.logo img{
+    width: 120px;
+    display: flex;
+    align-items: center;
+}
+.nav-menu{
+    color: white;
+    display: flex;
+    font-size: 14px;
+}
+nav.nav-menu div{
+    margin-left: 40px;
+}
+.nav-menu a{    
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+}
+.nav-menu a:after{
+    content: "";
+    position: absolute;
+    background-color: #08fdd8;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s ;
+}
+.nav-menu a:hover:after{
+    width: 100%;
+}
+/* ------- End of section general styles of header */
+
+/* ------- Start of section general styles of principal and social media */
+.principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 110px;
+}
+.principal h2{
+    color: white;
+    font-size: 25px;
+}
+.principal h1{
+    color: #08fdd8;
+    font-size: 60px;
+}
+/* ----- Start of "typing" animation of h1 .principal-name */
+.principal-name{
+    display: inline-block;
+    border-right: 2px solid #08fdd8;
+    padding-right: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: pisca normal infinite 0.8s, digitar normal 5s steps(55) both;
+    animation-delay: 0.5s;
+    max-width: 0;
+}
+@keyframes pisca {
+    100%{
+        border-right-color: transparent;
+    }
+}
+@keyframes digitar {
+    100%{
+        max-width: 100%;
+    }
+}
+/* ----- End of "typing" animation of h1 .principal-name */
+
+.principal-text{
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+.principal-text2{
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+.social-media{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 120px;
+    animation: fadeInLeft;
+    animation-duration: 2s;
+    margin-bottom: 120px;
+}
+.social-media div{
+    margin-right: 10px;
+}
+.socialmedia-titulo{
+    color: white;
+    font-size: 16px;
+}
+/* ------- End of section General styles of principal and social media */
+
+/* ------- Start of Section General styles About */
+.about{
+    padding: 50px 160px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 100px;
+}
+.about-conteudo{
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.about-conteudo-h1{
+    display: flex;
+    justify-content: flex-start;
+}
+.about-h1{
+    text-align: center;
+    font-size: 40px;
+    margin-left: 2px;
+    color: #08fdd8;
+}
+.about-p{
+    color: white;
+    font-size: 15px;
+    margin-top: 40px;
+}
+section .about img{
+    width: 350px;
+}
+.button-about{
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+.button-about .button2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid #08fdd8;
+    width: 150px;
+    padding: 7px 0;
+    color: white;
+    font-size: 15px;
+    line-height: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.button-about .button2::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    background-color: #08fdd8;
+    z-index: -1;
+    transition: width .5s;
+}
+.button-about .item2::before{
+    width: 0;
+    height: 100%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.button-about .item2:hover::before{
+    width: 100%;
+}
+/* ------- End of Section General Styles About */
+
+/* ------- Start of Section General Styles Project */
+.title-project{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 145px;
+    margin-bottom: 40px;
+}
+.project-h1{
+    text-align: center;
+    font-size: 40px;
+    color: #08fdd8;
+    margin-right: 1px;
+}
+.project-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-card2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+.project-conteudo, .project-conteudo2{
+    color: white;
+    margin-left: -15px;
+    margin-bottom: 35px;
+    width: 400px;
+}
+.project-p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+.project-h2{
+    font-size: 35px;
+    color: #08fdd8;
+}
+.project-h3{
+    color: #08fdd8;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.project-img img{
+    width: 700px;
+}
+.card2{
+    margin-top: 140px;
+    margin-bottom: 140px;
+}
+.project-conteudo2{
+    margin-right: -35px;
+}
+.card-buttons .button{
+    position: relative;
+    background-color: transparent;
+    border-color: #08fdd8;
+    padding: 6px 10px;
+    margin-top: 50px;
+    width: 100px;
+    color: white;
+    font-size: 12px;
+    margin-right: 20px;
+    z-index: 1;
+}
+.card-buttons a:nth-child(2){
+    padding: 6px 29px;
+}
+/* --- Start animation buttons Show More and Code of project */
+.card-buttons .button{
+    position: relative;
+    line-height: 15px;
+    padding: 6px 12px;
+    border: 1px solid #08fdd8;
+    overflow: hidden;
+    cursor: pointer;
+}
+.card-buttons .button::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    background-color: #08fdd8;
+    z-index: -1;
+    transition: width .5s;
+}
+.card-buttons .item2::before{
+    width: 0;
+    height: 100%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card-buttons .item2:hover::before{
+    width: 100%;
+}
+/* --- End animation buttons Show More and Code of project */
+
+/* --- Start animation button view more of project */
+.button-viewmore{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+.button-viewmore .button2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid #08fdd8;
+    width: 150px;
+    padding: 7px 0;
+    color: white;
+    font-size: 15px;
+    line-height: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.button-viewmore .button2::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    background-color: #08fdd8;
+    z-index: -1;
+    transition: width .5s;
+}
+.button-viewmore .item2::before{
+    width: 0;
+    height: 100%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.button-viewmore .item2:hover::before{
+    width: 100%;
+}
+/* --- End animation button view more of project */
+/* ------- End of Section General styles of Project */
+
+/* ------- Start of Section General styles of skills */
+.skills-cards{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+.title-skill{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 145px;
+    margin-bottom: 40px;
+}
+.skills-cards p{
+    font-size: 14px;
+}
+.skill-h1{
+    text-align: center;
+    font-size: 40px;
+    color: #08fdd8;
+    margin-right: 1px;
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    background-color: #131313;
+    padding: 30px 25px 0px 25px;
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+    box-shadow: 20px 20px 20px -10px rgb(34, 34, 34);
+    border: #08fdd8 solid 2px;
+}
+section.skills h2{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.skill img{
+    width: 55px;
+}
+section.skills .skill-html:hover{
+    box-shadow: 20px 20px 20px -20px #FF5722;
+    color: #FF5722;
+}
+section.skills .skill-css:hover{
+    box-shadow: 20px 20px 20px -20px rgb(0, 174, 255);
+    color: rgb(0, 174, 255);
+}
+section.skills .skill-js:hover{
+    box-shadow: 20px 20px 20px -20px #f7df1e;
+    color: #f7df1e;
+}
+section.skills .skill-figma:hover{
+    box-shadow: 20px 20px 20px -20px #0ACF83;
+    color: #0ACF83;
+}
+section.skills .skill-psd:hover{
+    box-shadow: 20px 20px 20px -20px #5889c4;
+    color: #5889c4;
+}
+@media screen and (max-width: 750px) {
+    .skills{
+        flex-direction: column;
+    }
+}
+/* ------- End of Section General styles of skills */
+
+/* ------- Start of Section General styles of contact */
+/* --- Start animation title of contact*/
+.title-form{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 145px;
+    margin-bottom: 40px;
+}
+.form-h1{
+    font-size: 40px;
+    color: #08fdd8;
+    margin-right: 1px;
+}
+/* --- End animation title contact*/
+
+.form-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.form-inputs input{
+    width: 440px;
+    height: 35px;
+    font-size: 12px;
+    color: white;
+    padding: 0 10px;
+}
+.form-area textarea{
+    width: 500px;
+    height: 92px;
+    font-size: 14px;
+    color: white;
+    padding: 10px 10px;
+}
+.form-filds{
+    background-color: transparent;
+    box-shadow: none;
+    border: #08fdd8 solid 1px;
+}
+#form-name, #form-email, #form-area{
+    margin-top: 10px;
+}
+#form-name{
+    margin-bottom: 10px;
+}
+.form-area{
+    margin-left: 20px;
+}
+#form-email{
+    margin-bottom: 10px;
+}
+.form{
+    margin-bottom: 160px;
+}
+/* --- Start animation/styles button Send Email of section contact */
+.button-form-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+.form-button .button2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid #08fdd8;
+    width: 150px;
+    padding: 7px 0;
+    color: white;
+    font-size: 15px;
+    line-height: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.form-button .button2::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    background-color: #08fdd8;
+    z-index: -1;
+    transition: width .5s;
+}
+.form-button .item2::before{
+    width: 0;
+    height: 100%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.form-button .item2:hover::before{
+    width: 100%;
+}
+/* --- End animation/styles button Send Email of section contact */
+/* ------- End of Section General styles of contact */
+
+/* ------- Start of Section General styles of message-thanks of index.css */
+.message-thanks{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+#h1-message-thanks{
+    display: inline-block;
+    border-right: 2px solid #08fdd8;
+    padding-right: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: pisca normal infinite 0.8s, digitar normal 8s steps(110) both;
+    animation-delay: 0.5s;
+    max-width: 0;
+    color: #08fdd8;
+}
+@keyframes pisca {
+    100%{
+        border-right-color: transparent;
+    }
+}
+@keyframes digitar {
+    100%{
+        max-width: 100%;
+    }
+}
+/* ------- End of Section General styles of message-thanks of index.css */
+
+
+/* ------- Start of Section General styles footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #292929;
+}
+.nav-footer{
+    display: flex;
+    font-size: 12px;
+}
+.nav-footer a{ 
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+}
+.logo-footer{
+    color: white;
+}
+/* ------- End of Section General styles footer */
+
+/* ------- Start of Section General styles more about me */
+.moreabout-title{
+    margin-left: 145px;
+    margin-bottom: 20px;
+    margin-top: 55px;
+}
+.more-about p{
+    margin-bottom: 20px;
+}
+.more-about-h1{
+        display: flex;
+        justify-content: flex-start;
+        font-size: 40px;
+        color: #08fdd8;
+}
+/*.conteudo-quickfacts h3:nth-child(1){
+    margin-top: 15px;
+}*/
+.conteudo-quickfacts, .conteudo-motivates, .conteudo-area{
+    width: 600px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 180px;
+}
+.conteudo-quickfacts h3{
+    color: #08fdd8;
+}
+
+/* ------- End of Section General styles more about me */
