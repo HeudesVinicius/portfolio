@@ -63,15 +63,15 @@ nav.nav-menu div{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: 110px;
+    margin-left: 11rem;
 }
 .principal h2{
     color: white;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
 }
 .principal h1{
     color: #08fdd8;
-    font-size: 6rem;
+    font-size: 5.7rem;
 }
 /* ----- Start of "typing" animation of h1 .principal-name */
 .principal-name{
@@ -109,7 +109,7 @@ nav.nav-menu div{
     margin-top: 120px;
     animation: fadeInLeft;
     animation-duration: 2s;
-    margin-bottom: 120px;
+    margin-bottom: 8%;
 }
 .social-media div{
     margin-right: 10px;
@@ -150,162 +150,23 @@ nav.nav-menu div{
     font-size: 1.5rem;
     margin-top: 8%;
 }
-.button-about{
-    margin-top: 9%;
-    margin-bottom: 120px;
-}
-.button-about .button2{
-    display: flex;
-    justify-content: center;
-    position: relative;
+.button-style{
     background-color: transparent;
-    border: 1px solid #08fdd8;
-    width: 12vw;
-    padding: 7px 0;
+    border: solid 1.0px #08fdd8;
+    width: 11vw;
     color: white;
-    font-size: 1.5rem;
-    line-height: 15px;
-    overflow: hidden;
-    cursor: pointer;
-}
-.button-about .button2::before{
-    content: "";
-    width: 100%;
-    height: 100%;
-
-    position: absolute;
-
-    background-color: #08fdd8;
-    z-index: -1;
-    transition: width .5s;
-}
-.button-about .item2::before{
-    width: 0;
-    height: 100%;
-
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.button-about .item2:hover::before{
-    width: 100%;
-}
-/* ------- End of Section General Styles About */
-
-/* ------- Start of Section General Styles Project */
-.title-project{
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 145px;
-    margin-bottom: 40px;
-}
-.project-h1{
-    text-align: center;
-    font-size: 4rem;
-    color: #08fdd8;
-}
-.project-card{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.project-title, .project-conteudo{
-    display: flex;
-    flex-direction: column;
-}
-.project-conteudo, .project-conteudo2{
-    color: white;
-    margin-left: -1.5rem;
-    margin-bottom: 3.5rem;
-    width: 30vw;
-}
-.project-p{
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-    font-size: 1.5rem;
-}
-.project-h2{
-    font-size: 3.5rem;
-    color: #08fdd8;
-}
-.project-h3{
-    color: #08fdd8;
-    font-size: 1.8rem;
-    margin-bottom: 2.5rem;
-}
-.project-img img{
-    width: 50vw;
-}
-.card2{
-    margin-top: 14rem;
-    margin-bottom: 14rem;
-}
-.project-conteudo2{
-    margin-right: -3.5rem;
-}
-.btn-projects{
-    padding: 2px;
-    border: 1px solid #08fdd8;
-    color: white;
-    cursor: pointer;
-    background-color: transparent;
+    padding: 0.3rem 0;
     font-size: 1.3rem;
-    width: 8vw;
-}
-.btn-projects:nth-child(1){
-    margin-right: 20px;
-}
-.btn-projects:hover{
-    background-color: #08fdd8;
-    transition-duration: 0.5s;
-}
-/* --- End animation buttons Show More and Code of project */
-
-/* --- Start animation button view more of project */
-.button-viewmore{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 120px;
-}
-.button-viewmore .button2{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    background-color: transparent;
-    border: 1px solid #08fdd8;
-    width: 10vw;
-    padding: 7px 0;
-    color: white;
-    font-size: 1.5rem;
-    line-height: 15px;
-    overflow: hidden;
     cursor: pointer;
 }
-.button-viewmore .button2::before{
-    content: "";
-    width: 100%;
-    height: 100%;
-
-    position: absolute;
-
+.button-style:hover{
     background-color: #08fdd8;
-    z-index: -1;
-    transition: width .5s;
 }
-.button-viewmore .item2::before{
-    width: 0;
-    height: 100%;
+.button-about .button-style{
+    margin-top: 8%;
+}
 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.button-viewmore .item2:hover::before{
-    width: 100%;
-}
-/* --- End animation button view more of project */
-/* ------- End of Section General styles of Project */
+/* ------- End of Section General Styles About */
 
 /* ------- Start of Section General styles of skills */
 .skills-cards{
@@ -368,40 +229,160 @@ section.skills .skill-psd:hover{
 }
 /* ------- End of Section General styles of skills */
 
-/* ------- Start of Section General styles of contact */
-/* --- Start animation title of contact*/
-.title-form{
+/* ------- Start of Section General styles Projects */
+.project-h1{
     display: flex;
     justify-content: flex-start;
     margin-left: 145px;
     margin-bottom: 40px;
+    font-size: 4rem;
+    color: #08fdd8;
+}
+.imgProject img{
+    width: 300px;
+    height: 300px;
+}
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-bottom: 10rem;
+}
+.cards-projects{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1100px;
+}
+.cards-projects .card{
+    position: relative;
+    width: 320px;
+    height: 300px;
+    margin: 15px;
+    overflow: hidden;
+}
+.cards-projects .card .imgProject, .cards-projects .card .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.cards-projects .card .imgProject img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cards-projects .card .contentProject::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.678)), to(black));
+            background: -moz-linear-gradient(top, black, black);
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+    transition-delay: 0.5s;
+}
+.cards-projects .card:hover .contentProject::before{
+    transform: scaleX(1);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: left;
+    transition-delay: 0s;
+}
+.cards-projects .card .contentProject{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards-projects .card .contentProject .content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    padding-top: 40px;
+    z-index: 1;
+    transition: 0.5s;
+    transform: translateX(-300px);
+    transition-delay: 0s;
+}
+.cards-projects .card:hover .contentProject .content{
+    transform: translateX(0px);
+    transition-delay: 0.3s;
+}
+.cards-projects .card .contentProject .content h2{
+    transform: translateX(0px);
+    color: #08fdd8;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.774);
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+.cards-projects .card .contentProject .content p{
+    transform: translateX(0px);
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.cards-projects .card .contentProject .content h3{
+    transform: translateX(0px);
+    color: #08fdd8;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.774);
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+.btn-projects{
+    background-color: transparent;
+    border: solid 1.5px #08fdd8;
+    width: 8vw;
+    color: white;
+    padding: 0.2rem 0;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.btn-projects:nth-child(1){
+    margin-right: 20px;
+}
+.btn-projects:hover{
+    background-color: #08fdd8;
+}
+/* ------- End of Section General styles Projects */
+
+/* ------- Start of Section General styles of contact */
+.title-form{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form{
+    display: flex;
+    justify-content: center;
 }
 .form-h1{
     font-size: 4rem;
     color: #08fdd8;
     margin-right: 1px;
 }
-/* --- End animation title contact*/
-
-.form-inputs{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
 .form{
     display: flex;
-    justify-content: center;
     color: white;
 }
-.form-inputs input{
-    width: 35vw;
+.form-content input{
+    width: 50vw;
     height: 6vh;
     font-size: 1.2rem;
     color: white;
     padding: 0 10px;
 }
-.form-area textarea{
-    width: 38vw;
+.area-message{
+    width: 50vw;
     height: 14vh;
     font-size: 1.4rem;
     color: white;
@@ -424,53 +405,10 @@ section.skills .skill-psd:hover{
 #form-email{
     margin-bottom: 10px;
 }
-.form{
-    margin-bottom: 160px;
+.form-button{
+    margin-top: 2%;
+    margin-bottom: 8%;
 }
-/* --- Start animation/styles button Send Email of section contact */
-.button-form-button{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 70px;
-}
-.form-button .button2{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    background-color: transparent;
-    border: 1px solid #08fdd8;
-    width: 18vh;
-    padding: 7px 0;
-    color: white;
-    font-size: 1.5rem;
-    line-height: 15px;
-    overflow: hidden;
-    cursor: pointer;
-}
-.form-button .button2::before{
-    content: "";
-    width: 100%;
-    height: 100%;
-
-    position: absolute;
-
-    background-color: #08fdd8;
-    z-index: -1;
-    transition: width .5s;
-}
-.form-button .item2::before{
-    width: 0;
-    height: 100%;
-
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.form-button .item2:hover::before{
-    width: 100%;
-}
-/* --- End animation/styles button Send Email of section contact */
 /* ------- End of Section General styles of contact */
 
 /* ------- Start of Section General styles of message-thanks of index.css */
@@ -508,17 +446,17 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 40px;
+    padding: 2rem 4rem;
     background-color: #292929;
 }
 .nav-footer{
     display: flex;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 .nav-footer a{ 
     text-decoration: none;
     color: white;
-    padding: 0 20px;
+    padding: 0 2rem;
 }
 .logo-footer{
     color: white;
@@ -567,14 +505,26 @@ footer{
         margin: 0;
         margin-bottom: 30px;
     }
-    .title-project{
+    .project-h1{
         display: block;
         text-align: center;
         margin: 0;
         margin-bottom: 30px;
     }
-    .project-conteudo h2{
-    
+    .title-form{
+        display: block;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .btn-projects{
+        background-color: transparent;
+        border: solid 1.5px #08fdd8;
+        width: 15vw;
+        color: white;
+        padding: 0.2rem 0;
+        font-size: 1.3rem;
+        cursor: pointer;
     }
 }
 @media screen and (max-width: 700px) {
@@ -614,8 +564,14 @@ footer{
     .project-conteudo, .project-conteudo2{
         width: 40vw;
     }
+    .button-style{
+        width: 20vw;
+    }
 }
 @media screen and (max-width: 426px) {
+    .principal{
+        margin-left: 6rem;
+    }
     .principal h2{
         font-size: 2rem;
     }
@@ -624,5 +580,31 @@ footer{
     }
     .principal{
         margin-left: 10rem;
+    }
+    .form{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards-projects .card{
+        position: relative;
+        width: 270px;
+        height: 250px;
+        margin: 15px;
+        overflow: hidden;
+    }
+    .form-content input{
+        width: 65vw;
+    }
+    .area-message{
+        width: 65vw;
+    }
+    .nav-footer a{
+        padding: 0 1rem;
+    }
+    .nav-footer{
+        font-size: 0.8rem;
+    }
+    footer{
+        padding: 1.5rem 3rem;
     }
 }
