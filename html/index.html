@@ -14,27 +14,21 @@
 
 <body>
     <!-- Start Cabeçalho-->
-    <header>
-        <div class="cabecalho">
-            <div class="logo">
-                <img src="/images/{H) VINICIUS.svg">
-            </div>
-            <nav class="nav-menu">
-                <div class="menu-item">
-                    <a href="#home">HOME</a>
-                </div>
-                <div class="menu-item">
-                    <a href="#aboutme">ABOUT ME</a>
-                </div>
-                <div class="menu-item">
-                    <a href="#skills">SKILLS</a>
-                </div>
-                <div class="menu-item">
-                    <a href="#projects">PROJECTS</a>
-                </div>
-                <div class="menu-item"><a href="#contact">CONTACT</a></div>
-            </nav>
-        </div>
+    <header id="header">
+        <nav class="header">
+          <a class="logo" href="/html/index.html"><span>{</span>H<span>)</span>VINICIUS</a>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="#aboutme">ABOUT ME</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
     </header>
     <!-- End Cabeçalho-->
 
@@ -51,7 +45,6 @@
                 <h2>Front End Developer</h2>
             </div>
         </div>
-
         <div class="social-media">
             <div class="socialmedia-titulo">
                 <h3>Social Media</h3>
@@ -91,64 +84,66 @@
                 I'm Heudes Vinicius, I'm 18 years old and I'm a Front End developer with some knowledge in Ux/Ui designer. I develop interfaces aiming at high quality and modernity, also focusing on problem solving, design, performance and SEO.
             </p>
             <div class="button-about">
-                <button type="submit" class="button-style">Send Email</button>
+                <a href="/html/about.html"><button type="submit" class="button-style" link="about.html">More about me</button></a>
             </div>
         </div>
     </section>
     <!-- End Section Ahout Me -->
 
     <!-- Start Section Skills -->
-    <div class="skill-title">
-        <h1 class="skill-h1">Languages and Tools</h1>
+    <div>
+        <div class="skill-title" id="skills">
+            <h1 class="skill-h1">Languages and Tools</h1>
+        </div>
+        <main class="skills">
+            <div class="polaroid skill-html">
+                <img src="/Images/LOGO HTML.svg" class="photo" alt="">
+                <div>
+                    <h2>Css</h2>
+                    <p>The HTML language is the language for writing web pages. HTML is the acronym for HyperText Markup Language.</p>
+                </div>
+            </div>
+            <div class="polaroid skill-css">
+                <img src="/Images/LOGO CSS.svg" class="photo" alt="">
+                <div>
+                    <h2>Css</h2>
+                    <p>The HTML language is the language for writing web pages. HTML is the acronym for HyperText Markup Language.</p>
+                </div>
+            </div>
+            <div class="polaroid skill-js">
+                <img src="/Images/LOGO JS.svg" class="photo" alt="">
+                <div>
+                    <h2>Css</h2>
+                    <p>The HTML language is the language for writing web pages. HTML is the acronym for HyperText Markup Language.</p>
+                </div>
+            </div>
+            <div class="polaroid skill-js">
+                <img src="/Images/" class="photo" alt="">
+                <div>
+                    <h2>Css</h2>
+                    <p>The HTML language is the language for writing web pages. HTML is the acronym for HyperText Markup Language.</p>
+                </div>
+            </div>
+            <div class="polaroid skill-figma">
+                <img src="/Images/figma.svg" class="photo" alt="">
+                <div>
+                    <h2>Css</h2>
+                    <p>The HTML language is the language for writing web pages. HTML is the acronym for HyperText Markup Language.</p>
+                </div>
+            </div>
+            <div class="polaroid skill-psd">
+                <img src="/Images/psd.svg" class="photo" alt="">
+                <div>
+                    <h2>Css</h2>
+                    <p>The HTML language is the language for writing web pages. HTML is the acronym for HyperText Markup Language.</p>
+                </div>
+            </div>
+        </main>
     </div>
-    <main class="skills">
-        <div class="polaroid skill-html">
-            <img src="/Images/LOGO HTML.svg" class="photo" alt="">
-            <div>
-                <h2>Css</h2>
-                <p>The HTML language is the language for writing web pages. HTML is the acronym for HyperText Markup Language.</p>
-            </div>
-        </div>
-        <div class="polaroid skill-css">
-            <img src="/Images/LOGO CSS.svg" class="photo" alt="">
-            <div>
-                <h2>Css</h2>
-                <p>The HTML language is the language for writing web pages. HTML is the acronym for HyperText Markup Language.</p>
-            </div>
-        </div>
-        <div class="polaroid skill-js">
-            <img src="/Images/LOGO JS.svg" class="photo" alt="">
-            <div>
-                <h2>Css</h2>
-                <p>The HTML language is the language for writing web pages. HTML is the acronym for HyperText Markup Language.</p>
-            </div>
-        </div>
-        <div class="polaroid skill-js">
-            <img src="/Images/" class="photo" alt="">
-            <div>
-                <h2>Css</h2>
-                <p>The HTML language is the language for writing web pages. HTML is the acronym for HyperText Markup Language.</p>
-            </div>
-        </div>
-        <div class="polaroid skill-figma">
-            <img src="/Images/figma.svg" class="photo" alt="">
-            <div>
-                <h2>Css</h2>
-                <p>The HTML language is the language for writing web pages. HTML is the acronym for HyperText Markup Language.</p>
-            </div>
-        </div>
-        <div class="polaroid skill-psd">
-            <img src="/Images/psd.svg" class="photo" alt="">
-            <div>
-                <h2>Css</h2>
-                <p>The HTML language is the language for writing web pages. HTML is the acronym for HyperText Markup Language.</p>
-            </div>
-        </div>
-    </main>
     <!-- End Section Skills -->
 
     <!-- Start Section Projects -->
-    <section>
+    <section id="projects">
         <div class="project-title">
             <h1 class="project-h1">Projects</h1>
         </div>
@@ -277,7 +272,7 @@
                     <div class="form-button">
                         <button class="button-style" type="submit">Send Email</button>
                     </div>
-                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500//html/thanks.html">
                 </div>
         </form>
    </section>
@@ -289,10 +284,10 @@
             <h4>© 2021 Heudes Vinicius</h4>
         </div>
         <nav class="nav-footer">
-            <div class="footer-item"><a href="index.html">HOME</a></div>
-            <div class="footer-item"><a href="about.html">ABOUT ME</a></div>
-            <div class="footer-item"><a href="projects.html">PROJECTS</a></div>
-            <div class="footer-item"><a href="">CONTACT</a></div>
+            <div class="footer-item"><a href="#header">HOME</a></div>
+            <div class="footer-item"><a href="#aboutme">ABOUT ME</a></div>
+            <div class="footer-item"><a href="#skills">SKILLS</a></div>
+            <div class="footer-item"><a href="#projects">PROJECTS</a></div>
         </nav>
     </footer>
     <!-- End footer-->
@@ -305,10 +300,7 @@
       });
     </script>
     <!-- End Library JS Transitions -->
-
-    <!-- Start Library JS Card 3D -->
-    <script type="text/javascript" src="vanilla-tilt.js"></script>
-    <!-- End Library JS Card 3D -->
+    <script src="/js/mobile-navbar.js"></script>
 </body>
 
 </html>

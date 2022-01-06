@@ -17,54 +17,98 @@ body{
     background-repeat: no-repeat;
 }
 /* ------- Start of section general styles of header */
-.logo img{
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-.cabecalho{     
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 35px;
-    padding-bottom: 100px;
-}
-.social-media{
-    display: flex;
-    align-items: center;
-}
-.socialmedia-logo img{
-    width: 80%;
-}
-.socialmedia-rectangle img{
-    width: 100%;
-}
-.nav-menu{
+.nav-list a{
     color: white;
-    display: flex;
-    font-size: 1.4rem;
-}
-nav.nav-menu div{
-    margin-left: 40px;
-}
-.nav-menu a{    
-    position: relative;
     text-decoration: none;
+    transition: 0.3s;
+    font-size: 1.2rem;
+}
+.logo{
+    font-size: 1.5rem;
     color: white;
-    padding: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
-.nav-menu a:after{
-    content: "";
-    position: absolute;
-    background-color: #08fdd8;
-    height: 3px;
-    width: 0%;
-    left: 0;
-    bottom: -10px;
-    transition: 0.3s ;
+header span{
+    color: #08fdd8
 }
-.nav-menu a:hover:after{
-    width: 100%;
+.logo:hover, .nav-list a:hover{
+    color: #08fdd8;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #292929;
+    height: 9vh;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+.nav-list li{
+    letter-spacing: 2px;
+    margin-left: 32px;
+}
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px;
+    transition: 0.3s;
+}
+@media (max-width: 767px){
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: #292929;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu{
+      display: block;
+    }
+}
+.nav-list.active{
+    transform: translateX(0);
+}
+@keyframes navLinkFade{
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+.mobile-menu.active .line1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+.mobile-menu.active .line2{
+    opacity: 0;
+}
+.mobile-menu.active .line3{
+    transform: rotate(45deg) translate(-5px, -7px);
 }
 /* ------- End of section general styles of header */
 
@@ -74,6 +118,7 @@ nav.nav-menu div{
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 11rem;
+    margin-top: 11%;
 }
 .principal h2{
     color: white;
@@ -425,10 +470,12 @@ main.skills .skill-psd:hover{
 /* ------- End of Section General styles of contact */
 
 /* ------- Start of Section General styles of message-thanks of index.css */
-.message-thanks{
-    display: flex;
-    justify-content: center;
-    margin-top: 15%;
+.thanks{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
 }
 #h1-message-thanks{
     display: inline-block;
@@ -436,7 +483,7 @@ main.skills .skill-psd:hover{
     padding-right: 3px;
     white-space: nowrap;
     overflow: hidden;
-    animation: pisca normal infinite 0.8s, digitar normal 8s steps(110) both;
+    animation: pisca normal infinite 0.5s, digitar normal 4s steps(80) both;
     animation-delay: 0.5s;
     max-width: 0;
     color: #08fdd8;
@@ -451,25 +498,30 @@ main.skills .skill-psd:hover{
         max-width: 100%;
     }
 }
+.footer-thanks{
+    position: fixed;
+}
 /* ------- End of Section General styles of message-thanks of index.css */
 
 
 /* ------- Start of Section General styles footer */
 footer{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem 4rem;
+    justify-content: space-around;
+    bottom:0;
+    left:0;
     background-color: #292929;
+    width: 100%;
+    padding: 1.5rem;
 }
 .nav-footer{
     display: flex;
-    font-size: 1.1rem;
-}
-.nav-footer a{ 
     text-decoration: none;
+}
+.footer-item a{
     color: white;
-    padding: 0 2rem;
+    display: flex;
+    margin-left: 20px;
 }
 .logo-footer{
     color: white;
@@ -478,17 +530,21 @@ footer{
 
 /* ------- Start of Section General styles more about me */
 .moreabout-title{
-    margin-left: 145px;
-    margin-bottom: 20px;
-    margin-top: 55px;
+    margin-bottom: 2rem;
+    margin-top: 5.5rem;
 }
 .more-about p{
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.more-about{
+    margin: auto;
+    width: 50%;
 }
 .more-about-h1{
         display: flex;
-        justify-content: flex-start;
-        font-size: 4rem;
+        justify-content: center;
+        font-size: 3rem;
         color: #08fdd8;
 }
 /*.conteudo-quickfacts h3:nth-child(1){
@@ -496,12 +552,10 @@ footer{
 }*/
 .conteudo-quickfacts, .conteudo-motivates, .conteudo-area{
     color: white;
-    display: flex;
-    flex-direction: column;
-    margin-left: 180px;
 }
 .conteudo-quickfacts h3{
     color: #08fdd8;
+    text-align: center;
 }
 
 /* ------- End of Section General styles more about me */
@@ -575,19 +629,19 @@ footer{
         margin: 15px;
         overflow: hidden;
     }
-    .form-content input{
+    .area-message{
         width: 65vw;
     }
     .area-message{
         width: 65vw;
     }
-    .nav-footer a{
-        padding: 0 1rem;
+    .form-content input{
+        width: 65vw;
     }
-    .nav-footer{
-        font-size: 0.8rem;
+    .socialmedia-logo img{
+        width: 14px;
     }
-    footer{
-        padding: 1.5rem 3rem;
+    .more-about{
+        width: 80%;
     }
 }
