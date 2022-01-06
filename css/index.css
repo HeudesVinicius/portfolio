@@ -17,6 +17,11 @@ body{
     background-repeat: no-repeat;
 }
 /* ------- Start of section general styles of header */
+.logo img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
 .cabecalho{     
     display: flex;
     align-items: center;
@@ -24,10 +29,15 @@ body{
     margin: 35px;
     padding-bottom: 100px;
 }
-.logo img{
-    width: 12vw;
+.social-media{
     display: flex;
     align-items: center;
+}
+.socialmedia-logo img{
+    width: 80%;
+}
+.socialmedia-rectangle img{
+    width: 100%;
 }
 .nav-menu{
     color: white;
@@ -128,7 +138,7 @@ nav.nav-menu div{
     padding: 10% 10%;
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 100px;
+    margin-bottom: 12%;
 }
 .about-conteudo{
     margin-left: 5%;
@@ -143,7 +153,8 @@ nav.nav-menu div{
 .about-h1{
     text-align: center;
     font-size: 4rem;
-    color: #08fdd8;
+    color: white;
+    border-bottom: solid 2px #08fdd8;
 }
 .about-p{
     color: white;
@@ -169,74 +180,75 @@ nav.nav-menu div{
 /* ------- End of Section General Styles About */
 
 /* ------- Start of Section General styles of skills */
-.skills-cards{
+.skill-title{
     display: flex;
-    color: white;
-    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 100px;
-}
-.skills-cards p{
-    font-size: 1.5rem;
+    margin-bottom: 4%;
 }
 .skill-h1{
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 145px;
-    margin-bottom: 40px;
     font-size: 4rem;
-    color: #08fdd8;
+    color: white;
+    border-bottom: solid 2px #08fdd8;
 }
-.skill{
-    display: flex;
-    flex-direction: column;
-    background-color: #131313;
-    padding: 3rem 2.5rem 0rem 2.5rem;
-    margin: 20px;
-    width: 18vw;
-    height: 250px;
-    box-shadow: 20px 20px 20px -10px rgb(34, 34, 34);
-    border: #08fdd8 solid 2px;
+.polaroid{
+    background: rgb(0, 0, 0);
+    padding: 15px 15px 40px;
+    border-radius: 6px;
+    color: white;
+    padding: 30px;
 }
-section.skills h2{
-    margin-top: 25px;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
+.photo{
+    width: 50px;
 }
-.skill img{
-    width: 4vw;
+.skills{
+    margin: auto;
+    max-width: 1030px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    grid-gap: 20px;
+    justify-content: center;
+    padding: 40px;
+    margin-bottom: 12%;
 }
-section.skills .skill-html:hover{
+.skills h2{
+    font-size: 20px;
+    padding: 15px 0;
+}
+.skills p{
+    font-size: 13px;
+}
+main.skills .skill-html:hover{
     box-shadow: 20px 20px 20px -20px #FF5722;
     color: #FF5722;
 }
-section.skills .skill-css:hover{
+main.skills .skill-css:hover{
     box-shadow: 20px 20px 20px -20px rgb(0, 174, 255);
     color: rgb(0, 174, 255);
 }
-section.skills .skill-js:hover{
+main.skills .skill-js:hover{
     box-shadow: 20px 20px 20px -20px #f7df1e;
     color: #f7df1e;
 }
-section.skills .skill-figma:hover{
+main.skills .skill-figma:hover{
     box-shadow: 20px 20px 20px -20px #0ACF83;
     color: #0ACF83;
 }
-section.skills .skill-psd:hover{
+main.skills .skill-psd:hover{
     box-shadow: 20px 20px 20px -20px #5889c4;
     color: #5889c4;
 }
 /* ------- End of Section General styles of skills */
 
 /* ------- Start of Section General styles Projects */
-.project-h1{
+.project-title{
     display: flex;
-    justify-content: flex-start;
-    margin-left: 145px;
-    margin-bottom: 40px;
+    justify-content: center;
+    margin-bottom: 4%;
+}
+.project-h1{
     font-size: 4rem;
-    color: #08fdd8;
+    color: white;
+    border-bottom: solid 2px #08fdd8;
 }
 .imgProject img{
     width: 300px;
@@ -358,20 +370,18 @@ section.skills .skill-psd:hover{
 
 /* ------- Start of Section General styles of contact */
 .title-form{
-    text-align: center;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
+}
+.form-h1{
+    font-size: 4rem;
+    color: white;
+    border-bottom: solid 2px #08fdd8;
 }
 .form{
     display: flex;
     justify-content: center;
-}
-.form-h1{
-    font-size: 4rem;
-    color: #08fdd8;
-    margin-right: 1px;
-}
-.form{
-    display: flex;
     color: white;
 }
 .form-content input{
@@ -380,6 +390,9 @@ section.skills .skill-psd:hover{
     font-size: 1.2rem;
     color: white;
     padding: 0 10px;
+}
+.form-content{
+    font-size: 1.5rem;
 }
 .area-message{
     width: 50vw;
@@ -499,24 +512,6 @@ footer{
     .skill{
         height: 180px;
     }
-    .skill-h1{
-        display: block;
-        text-align: center;
-        margin: 0;
-        margin-bottom: 30px;
-    }
-    .project-h1{
-        display: block;
-        text-align: center;
-        margin: 0;
-        margin-bottom: 30px;
-    }
-    .title-form{
-        display: block;
-        text-align: center;
-        margin: 0;
-        margin-bottom: 30px;
-    }
     .btn-projects{
         background-color: transparent;
         border: solid 1.5px #08fdd8;
@@ -539,27 +534,13 @@ footer{
         margin-bottom: 1.5rem;
         margin-top: 1.5rem;
     }
-    .project-h3{
-        font-size: 1.5rem;
-        margin-bottom: ;
-    }
-    .project-conteudo, .project-conteudo2{
-        margin-bottom: 0rem;
+    .nav-menu{
+        display: none;
     }
 }
 @media screen and (max-width: 600px) {
     html{
         font-size: 45%;
-    }
-    .skills-cards{
-        display: flex;
-        flex-direction: column;
-    }
-    .skill{
-        width: 30vw;
-    }
-    .nav-menu{
-        display: none;
     }
     .project-conteudo, .project-conteudo2{
         width: 40vw;
@@ -567,8 +548,14 @@ footer{
     .button-style{
         width: 20vw;
     }
+    .skill{
+        margin-left: 0px;
+    }
 }
 @media screen and (max-width: 426px) {
+    html{
+        font-size: 40%;
+    }
     .principal{
         margin-left: 6rem;
     }
@@ -579,11 +566,7 @@ footer{
         font-size: 5rem;
     }
     .principal{
-        margin-left: 10rem;
-    }
-    .form{
-        flex-direction: column;
-        align-items: center;
+        margin-left: 7rem;
     }
     .cards-projects .card{
         position: relative;
