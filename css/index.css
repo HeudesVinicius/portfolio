@@ -289,6 +289,7 @@ main.skills .skill-psd:hover{
     display: flex;
     justify-content: center;
     margin-bottom: 4%;
+    animation: fadeInLeft;
 }
 .project-h1{
     font-size: 4rem;
