@@ -498,7 +498,7 @@ main.skills .skill-psd:hover{
         max-width: 100%;
     }
 }
-.footer-thanks{
+.footer-thanks, .footer-about{
     position: fixed;
 }
 /* ------- End of Section General styles of message-thanks of index.css */
@@ -552,10 +552,15 @@ footer{
 }*/
 .conteudo-quickfacts, .conteudo-motivates, .conteudo-area{
     color: white;
+    font-size: 1.2rem;
 }
 .conteudo-quickfacts h3{
     color: #08fdd8;
     text-align: center;
+    font-size: 2rem;
+}
+.conteudo-area{
+    margin-bottom: 8rem;
 }
 
 /* ------- End of Section General styles more about me */
@@ -570,7 +575,7 @@ footer{
         background-color: transparent;
         border: solid 1.5px #08fdd8;
         width: 15vw;
-        color: white;
+        color: rgb(151, 97, 97)51, 97, 97);
         padding: 0.2rem 0;
         font-size: 1.3rem;
         cursor: pointer;
