@@ -262,23 +262,27 @@ header span{
 .skills p{
     font-size: 13px;
 }
-main.skills .skill-html:hover{
+div.skills .skill-html:hover{
     box-shadow: 20px 20px 20px -20px #FF5722;
     color: #FF5722;
 }
-main.skills .skill-css:hover{
+div.skills .skill-css:hover{
     box-shadow: 20px 20px 20px -20px rgb(0, 174, 255);
     color: rgb(0, 174, 255);
 }
-main.skills .skill-js:hover{
+div.skills .skill-js:hover{
     box-shadow: 20px 20px 20px -20px #f7df1e;
     color: #f7df1e;
 }
-main.skills .skill-figma:hover{
+div.skills .skill-boot:hover{
+    box-shadow: 20px 20px 20px -20px #5b4282;
+    color: #5b4282;
+}
+div.skills .skill-figma:hover{
     box-shadow: 20px 20px 20px -20px #0ACF83;
     color: #0ACF83;
 }
-main.skills .skill-psd:hover{
+div.skills .skill-psd:hover{
     box-shadow: 20px 20px 20px -20px #5889c4;
     color: #5889c4;
 }
@@ -651,4 +655,3 @@ footer{
         width: 80%;
     }
 }
-
